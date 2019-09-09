@@ -20,7 +20,7 @@
 -----
 # ReflectCode Project demo (Calculator App)
 Calculator App is one of the initial programs developed.
-**ReflectCode** is also publishing its first calculator iOS app ported automatically.
+**ReflectCode** is publishing its first  automatically ported calculator iOS app.
 This repository contains the Android source code which was used as input and generated iOS source code project.
 
 ## Files transformed
@@ -31,10 +31,19 @@ This sample project demonstrates porting of following files -
 * colors.xml
 * strings.xml
 
+## Statement Estimation
+| File | Statement |
+|---------|------------|
+| Layout xml | 423 |
+| Java | 446 |
+| colors.xml | 30 |
+| strings.xml | 19 |
+| AppIcon | 50 | 0 |
+| XCode Project | 385 |
+| **Total** | **1335** |
+
 
 ## Dev Notes
-* `RC_btn_default.imageset` are used as a default background when no image is provided in Android project
-* .xml layout controls used - Linear layout, Buttons and TextView
 
 ### Details of classes ported -
 | Class | Members |
@@ -56,17 +65,11 @@ This sample project demonstrates porting of following files -
 | TextView | layout_width, layout_height, text, id, hint, gravity, textSize, background, textColor | 
 | Button | layout_width, layout_height, layout_weight, id, text, textSize | 
 
+-----
 
-## Statement Estimation
-| File | Statement |
-|---------|------------|
-| Layout xml | 423 |
-| Java | 446 |
-| colors.xml | 30 |
-| strings.xml | 19 |
-| AppIcon | 50 | 0 |
-| XCode Project | 385 |
-| **Total** | **1335** |
+## Screen recording
+
+<img src="/Visuals/Calc-Screen-Rec.gif" alt="Anim-ScreenRec-Android"/>
 
 -----
 
@@ -75,12 +78,6 @@ This sample project demonstrates porting of following files -
 Screen shot of Android and iOS devices - 
 <img src="/Visuals/Calc-Screenshot-Portrait.png" alt="Screenshot"/>
 <img src="/Visuals/Calc-Screenshot-Landscape.png" alt="Screenshot"/>
-
------
-
-## Screen recording
-
-<img src="/Visuals/Calc-Screen-Rec.gif" alt="Anim-ScreenRec-Android"/>
 
 -----
 

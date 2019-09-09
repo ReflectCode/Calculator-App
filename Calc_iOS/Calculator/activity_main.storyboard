@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Calculator-NavControl">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="DNV-xg-evK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Calculator-NavControl" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ulm-4h-Ru3">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="colorPrimary"/>
+                        <textAttributes key="titleTextAttributes"/>
+                        <textAttributes key="largeTitleTextAttributes"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Calculator-ToolBar">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="MainActivity-VC" kind="relationship" relationship="rootViewController" id="hC6-UQ-eHy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ccE-g8-4ju" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-400" y="600"/>
+        </scene>
+        <!--MainActivity-VC-->
+        <scene sceneID="MainActivity-VC-Scene">
+            <objects>
+                <viewController storyboardIdentifier="MainActivity-VC" id="MainActivity-VC" userLabel="MainActivity-VC" customClass="MainActivity" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="Root-View" id="MainActivity-View" userLabel="MainActivity-View">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view opaque="NO" clipsSubviews="YES" tag="1000" contentMode="scaleToFill" horizontalHuggingPriority="200" verticalHuggingPriority="200" translatesAutoresizingMaskIntoConstraints="NO" id="RC-ID-1000" userLabel="RC-ID-1000">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <subviews>
+                                    <label clipsSubviews="YES" userInteractionEnabled="NO" tag="1001" contentMode="scaleToFill" verticalHuggingPriority="350" text="0" textAlignment="right" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="display" userLabel="display">
+                                        <rect key="frame" x="8" y="8" width="398" height="41"/>
+                                        <color key="backgroundColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="41" id="display-Height-Eq-41"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1002" contentMode="scaleToFill" verticalHuggingPriority="350" text="" textAlignment="right" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="equation" userLabel="equation">
+                                        <rect key="frame" x="8" y="59" width="398" height="36"/>
+                                        <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="0.33333333329999998" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="equation-Height-Eq-36"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </label>
+                                    <view opaque="NO" clipsSubviews="YES" tag="1003" contentMode="scaleToFill" horizontalHuggingPriority="200" translatesAutoresizingMaskIntoConstraints="NO" id="RC-ID-1003" userLabel="RC-ID-1003">
+                                        <rect key="frame" x="8" y="104.99999999999999" width="398" height="139.66666666666663"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="seven" userLabel="seven">
+                                                <rect key="frame" x="0.0" y="0.0" width="79" height="139.66666666666666"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <inset key="contentEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                                                <state key="normal" title="7" backgroundImage="RC_btn_default_normal">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onClick:" destination="MainActivity-VC" eventType="touchUpInside" id="seven-onClick"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1005" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eight" userLabel="eight">
+                                                <rect key="frame" x="79" y="0.0" width="79" height="139.66666666666666"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <inset key="contentEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                                                <state key="normal" title="8" backgroundImage="RC_btn_default_normal">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onClick:" destination="MainActivity-VC" eventType="touchUpInside" id="eight-onClick"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1006" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nine" userLabel="nine">
+                                                <rect key="frame" x="158" y="0.0" width="80" height="139.66666666666666"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <inset key="contentEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                                                <state key="normal" title="9" backgroundImage="RC_btn_default_normal">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onClick:" destination="MainActivity-VC" eventType="touchUpInside" id="nine-onClick"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1007" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="div" userLabel="div">
+                                                <rect key="frame" x="238" y="0.0" width="160" height="139.66666666666666"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <inset key="contentEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                                                <state key="normal" title="/" backgroundImage="RC_btn_default_normal">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onClick:" destination="MainActivity-VC" eventType="touchUpInside" id="div-onClick"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="div" firstAttribute="width" secondItem="seven" secondAttribute="width" multiplier="2.02532" id="div-WidthRatio-RC-ID-1003" userLabel="div-WidthRatio-RC-ID-1003"/>
+                                            <constraint firstItem="div" firstAttribute="trailing" secondItem="RC-ID-1003" secondAttribute="trailing" priority="900" id="div-alignTrailing-withContainer" userLabel="div-alignTrailing-withContainer"/>
+                                            <constraint firstItem="div" firstAttribute="height" secondItem="RC-ID-1003" secondAttribute="height" id="div-heightEq-RC-ID-1003" userLabel="div-heightEq-RC-ID-1003"/>
+                                            <constraint firstItem="div" firstAttribute="left" secondItem="nine" secondAttribute="right" id="div-toRightOf-nine" userLabel="div-toRightOf-nine"/>
+                                            <constraint firstItem="div" firstAttribute="top" secondItem="RC-ID-1003" secondAttribute="top" id="div-top-RC-ID-1003" userLabel="div-top-RC-ID-1003"/>
+                                            <constraint firstItem="eight" firstAttribute="width" secondItem="seven" secondAttribute="width" id="eight-WidthRatio-RC-ID-1003" userLabel="eight-WidthRatio-RC-ID-1003"/>
+                                            <constraint firstItem="eight" firstAttribute="height" secondItem="RC-ID-1003" secondAttribute="height" id="eight-heightEq-RC-ID-1003" userLabel="eight-heightEq-RC-ID-1003"/>
+                                            <constraint firstItem="eight" firstAttribute="left" secondItem="seven" secondAttribute="right" id="eight-toRightOf-seven" userLabel="eight-toRightOf-seven"/>
+                                            <constraint firstItem="eight" firstAttribute="top" secondItem="RC-ID-1003" secondAttribute="top" id="eight-top-RC-ID-1003" userLabel="eight-top-RC-ID-1003"/>
+                                            <constraint firstItem="nine" firstAttribute="width" secondItem="seven" secondAttribute="width" multiplier="1.01266" id="nine-WidthRatio-RC-ID-1003" userLabel="nine-WidthRatio-RC-ID-1003"/>
+                                            <constraint firstItem="nine" firstAttribute="height" secondItem="RC-ID-1003" secondAttribute="height" id="nine-heightEq-RC-ID-1003" userLabel="nine-heightEq-RC-ID-1003"/>
+                                            <constraint firstItem="nine" firstAttribute="left" secondItem="eight" secondAttribute="right" id="nine-toRightOf-eight" userLabel="nine-toRightOf-eight"/>
+                                            <constraint firstItem="nine" firstAttribute="top" secondItem="RC-ID-1003" secondAttribute="top" id="nine-top-RC-ID-1003" userLabel="nine-top-RC-ID-1003"/>
+                                            <constraint firstItem="seven" firstAttribute="leading" secondItem="RC-ID-1003" secondAttribute="leading" id="seven-alignLeading-withContainer" userLabel="seven-alignLeading-withContainer"/>
+                                            <constraint firstItem="seven" firstAttribute="height" secondItem="RC-ID-1003" secondAttribute="height" id="seven-heightEq-RC-ID-1003" userLabel="seven-heightEq-RC-ID-1003"/>
+                                            <constraint firstItem="seven" firstAttribute="top" secondItem="RC-ID-1003" secondAttribute="top" id="seven-top-RC-ID-1003" userLabel="seven-top-RC-ID-1003"/>
+                                        </constraints>
+                                    </view>
+                                    <view opaque="NO" clipsSubviews="YES" tag="1008" contentMode="scaleToFill" horizontalHuggingPriority="200" translatesAutoresizingMaskIntoConstraints="NO" id="RC-ID-1008" userLabel="RC-ID-1008">
+                                        <rect key="frame" x="8" y="244.66666666666669" width="398" height="140"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1009" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="four" userLabel="four">
+                                                <rect key="frame" x="0.0" y="0.0" width="79" height="140"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <inset key="contentEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                                                <state key="normal" title="4" backgroundImage="RC_btn_default_normal">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onClick:" destination="MainActivity-VC" eventType="touchUpInside" id="four-onClick"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1010" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="five" userLabel="five">
+                                                <rect key="frame" x="79" y="0.0" width="79" height="140"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <inset key="contentEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                                                <state key="normal" title="5" backgroundImage="RC_btn_default_normal">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onClick:" destination="MainActivity-VC" eventType="touchUpInside" id="five-onClick"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1011" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="six" userLabel="six">
+                                                <rect key="frame" x="158" y="0.0" width="80" height="140"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <inset key="contentEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                                                <state key="normal" title="6" backgroundImage="RC_btn_default_normal">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onClick:" destination="MainActivity-VC" eventType="touchUpInside" id="six-onClick"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1012" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mul" userLabel="mul">
+                                                <rect key="frame" x="238" y="0.0" width="160" height="140"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <inset key="contentEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                                                <state key="normal" title="*" backgroundImage="RC_btn_default_normal">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onClick:" destination="MainActivity-VC" eventType="touchUpInside" id="mul-onClick"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="five" firstAttribute="width" secondItem="four" secondAttribute="width" id="five-WidthRatio-RC-ID-1008" userLabel="five-WidthRatio-RC-ID-1008"/>
+                                            <constraint firstItem="five" firstAttribute="height" secondItem="RC-ID-1008" secondAttribute="height" id="five-heightEq-RC-ID-1008" userLabel="five-heightEq-RC-ID-1008"/>
+                                            <constraint firstItem="five" firstAttribute="left" secondItem="four" secondAttribute="right" id="five-toRightOf-four" userLabel="five-toRightOf-four"/>
+                                            <constraint firstItem="five" firstAttribute="top" secondItem="RC-ID-1008" secondAttribute="top" id="five-top-RC-ID-1008" userLabel="five-top-RC-ID-1008"/>
+                                            <constraint firstItem="four" firstAttribute="leading" secondItem="RC-ID-1008" secondAttribute="leading" id="four-alignLeading-withContainer" userLabel="four-alignLeading-withContainer"/>
+                                            <constraint firstItem="four" firstAttribute="height" secondItem="RC-ID-1008" secondAttribute="height" id="four-heightEq-RC-ID-1008" userLabel="four-heightEq-RC-ID-1008"/>
+                                            <constraint firstItem="four" firstAttribute="top" secondItem="RC-ID-1008" secondAttribute="top" id="four-top-RC-ID-1008" userLabel="four-top-RC-ID-1008"/>
+                                            <constraint firstItem="mul" firstAttribute="width" secondItem="four" secondAttribute="width" multiplier="2.02532" id="mul-WidthRatio-RC-ID-1008" userLabel="mul-WidthRatio-RC-ID-1008"/>
+                                            <constraint firstItem="mul" firstAttribute="trailing" secondItem="RC-ID-1008" secondAttribute="trailing" priority="900" id="mul-alignTrailing-withContainer" userLabel="mul-alignTrailing-withContainer"/>
+                                            <constraint firstItem="mul" firstAttribute="height" secondItem="RC-ID-1008" secondAttribute="height" id="mul-heightEq-RC-ID-1008" userLabel="mul-heightEq-RC-ID-1008"/>
+                                            <constraint firstItem="mul" firstAttribute="left" secondItem="six" secondAttribute="right" id="mul-toRightOf-six" userLabel="mul-toRightOf-six"/>
+                                            <constraint firstItem="mul" firstAttribute="top" secondItem="RC-ID-1008" secondAttribute="top" id="mul-top-RC-ID-1008" userLabel="mul-top-RC-ID-1008"/>
+                                            <constraint firstItem="six" firstAttribute="width" secondItem="four" secondAttribute="width" multiplier="1.01266" id="six-WidthRatio-RC-ID-1008" userLabel="six-WidthRatio-RC-ID-1008"/>
+                                            <constraint firstItem="six" firstAttribute="height" secondItem="RC-ID-1008" secondAttribute="height" id="six-heightEq-RC-ID-1008" userLabel="six-heightEq-RC-ID-1008"/>
+                                            <constraint firstItem="six" firstAttribute="left" secondItem="five" secondAttribute="right" id="six-toRightOf-five" userLabel="six-toRightOf-five"/>
+                                            <constraint firstItem="six" firstAttribute="top" secondItem="RC-ID-1008" secondAttribute="top" id="six-top-RC-ID-1008" userLabel="six-top-RC-ID-1008"/>
+                                        </constraints>
+                                    </view>
+                                    <view opaque="NO" clipsSubviews="YES" tag="1013" contentMode="scaleToFill" horizontalHuggingPriority="200" translatesAutoresizingMaskIntoConstraints="NO" id="RC-ID-1013" userLabel="RC-ID-1013">
+                                        <rect key="frame" x="8" y="384.66666666666669" width="398" height="139.66666666666669"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1014" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="one" userLabel="one">
+                                                <rect key="frame" x="0.0" y="0.0" width="79" height="139.66666666666666"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <inset key="contentEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                                                <state key="normal" title="1" backgroundImage="RC_btn_default_normal">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onClick:" destination="MainActivity-VC" eventType="touchUpInside" id="one-onClick"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1015" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="two" userLabel="two">
+                                                <rect key="frame" x="79" y="0.0" width="79" height="139.66666666666666"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <inset key="contentEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                                                <state key="normal" title="2" backgroundImage="RC_btn_default_normal">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onClick:" destination="MainActivity-VC" eventType="touchUpInside" id="two-onClick"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1016" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="three" userLabel="three">
+                                                <rect key="frame" x="158" y="0.0" width="80" height="139.66666666666666"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <inset key="contentEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                                                <state key="normal" title="3" backgroundImage="RC_btn_default_normal">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onClick:" destination="MainActivity-VC" eventType="touchUpInside" id="three-onClick"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1017" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sub" userLabel="sub">
+                                                <rect key="frame" x="238" y="0.0" width="160" height="139.66666666666666"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <inset key="contentEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                                                <state key="normal" title="-" backgroundImage="RC_btn_default_normal">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onClick:" destination="MainActivity-VC" eventType="touchUpInside" id="sub-onClick"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="one" firstAttribute="leading" secondItem="RC-ID-1013" secondAttribute="leading" id="one-alignLeading-withContainer" userLabel="one-alignLeading-withContainer"/>
+                                            <constraint firstItem="one" firstAttribute="height" secondItem="RC-ID-1013" secondAttribute="height" id="one-heightEq-RC-ID-1013" userLabel="one-heightEq-RC-ID-1013"/>
+                                            <constraint firstItem="one" firstAttribute="top" secondItem="RC-ID-1013" secondAttribute="top" id="one-top-RC-ID-1013" userLabel="one-top-RC-ID-1013"/>
+                                            <constraint firstItem="sub" firstAttribute="width" secondItem="one" secondAttribute="width" multiplier="2.02532" id="sub-WidthRatio-RC-ID-1013" userLabel="sub-WidthRatio-RC-ID-1013"/>
+                                            <constraint firstItem="sub" firstAttribute="trailing" secondItem="RC-ID-1013" secondAttribute="trailing" priority="900" id="sub-alignTrailing-withContainer" userLabel="sub-alignTrailing-withContainer"/>
+                                            <constraint firstItem="sub" firstAttribute="height" secondItem="RC-ID-1013" secondAttribute="height" id="sub-heightEq-RC-ID-1013" userLabel="sub-heightEq-RC-ID-1013"/>
+                                            <constraint firstItem="sub" firstAttribute="left" secondItem="three" secondAttribute="right" id="sub-toRightOf-three" userLabel="sub-toRightOf-three"/>
+                                            <constraint firstItem="sub" firstAttribute="top" secondItem="RC-ID-1013" secondAttribute="top" id="sub-top-RC-ID-1013" userLabel="sub-top-RC-ID-1013"/>
+                                            <constraint firstItem="three" firstAttribute="width" secondItem="one" secondAttribute="width" multiplier="1.01266" id="three-WidthRatio-RC-ID-1013" userLabel="three-WidthRatio-RC-ID-1013"/>
+                                            <constraint firstItem="three" firstAttribute="height" secondItem="RC-ID-1013" secondAttribute="height" id="three-heightEq-RC-ID-1013" userLabel="three-heightEq-RC-ID-1013"/>
+                                            <constraint firstItem="three" firstAttribute="left" secondItem="two" secondAttribute="right" id="three-toRightOf-two" userLabel="three-toRightOf-two"/>
+                                            <constraint firstItem="three" firstAttribute="top" secondItem="RC-ID-1013" secondAttribute="top" id="three-top-RC-ID-1013" userLabel="three-top-RC-ID-1013"/>
+                                            <constraint firstItem="two" firstAttribute="width" secondItem="one" secondAttribute="width" id="two-WidthRatio-RC-ID-1013" userLabel="two-WidthRatio-RC-ID-1013"/>
+                                            <constraint firstItem="two" firstAttribute="height" secondItem="RC-ID-1013" secondAttribute="height" id="two-heightEq-RC-ID-1013" userLabel="two-heightEq-RC-ID-1013"/>
+                                            <constraint firstItem="two" firstAttribute="left" secondItem="one" secondAttribute="right" id="two-toRightOf-one" userLabel="two-toRightOf-one"/>
+                                            <constraint firstItem="two" firstAttribute="top" secondItem="RC-ID-1013" secondAttribute="top" id="two-top-RC-ID-1013" userLabel="two-top-RC-ID-1013"/>
+                                        </constraints>
+                                    </view>
+                                    <view opaque="NO" clipsSubviews="YES" tag="1018" contentMode="scaleToFill" horizontalHuggingPriority="200" translatesAutoresizingMaskIntoConstraints="NO" id="RC-ID-1018" userLabel="RC-ID-1018">
+                                        <rect key="frame" x="8" y="524.33333333333337" width="398" height="139.66666666666663"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1019" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cancel" userLabel="cancel">
+                                                <rect key="frame" x="0.0" y="0.0" width="79" height="139.66666666666666"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <inset key="contentEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                                                <state key="normal" title="C" backgroundImage="RC_btn_default_normal">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onClick:" destination="MainActivity-VC" eventType="touchUpInside" id="cancel-onClick"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1020" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zero" userLabel="zero">
+                                                <rect key="frame" x="79" y="0.0" width="79" height="139.66666666666666"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <inset key="contentEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                                                <state key="normal" title="0" backgroundImage="RC_btn_default_normal">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onClick:" destination="MainActivity-VC" eventType="touchUpInside" id="zero-onClick"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1021" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="equal" userLabel="equal">
+                                                <rect key="frame" x="158" y="0.0" width="80" height="139.66666666666666"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <inset key="contentEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                                                <state key="normal" title="=" backgroundImage="RC_btn_default_normal">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onClick:" destination="MainActivity-VC" eventType="touchUpInside" id="equal-onClick"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1022" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="add" userLabel="add">
+                                                <rect key="frame" x="238" y="0.0" width="160" height="139.66666666666666"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <inset key="contentEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                                                <state key="normal" title="+" backgroundImage="RC_btn_default_normal">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onClick:" destination="MainActivity-VC" eventType="touchUpInside" id="add-onClick"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="add" firstAttribute="width" secondItem="cancel" secondAttribute="width" multiplier="2.02532" id="add-WidthRatio-RC-ID-1018" userLabel="add-WidthRatio-RC-ID-1018"/>
+                                            <constraint firstItem="add" firstAttribute="trailing" secondItem="RC-ID-1018" secondAttribute="trailing" priority="900" id="add-alignTrailing-withContainer" userLabel="add-alignTrailing-withContainer"/>
+                                            <constraint firstItem="add" firstAttribute="height" secondItem="RC-ID-1018" secondAttribute="height" id="add-heightEq-RC-ID-1018" userLabel="add-heightEq-RC-ID-1018"/>
+                                            <constraint firstItem="add" firstAttribute="left" secondItem="equal" secondAttribute="right" id="add-toRightOf-equal" userLabel="add-toRightOf-equal"/>
+                                            <constraint firstItem="add" firstAttribute="top" secondItem="RC-ID-1018" secondAttribute="top" id="add-top-RC-ID-1018" userLabel="add-top-RC-ID-1018"/>
+                                            <constraint firstItem="cancel" firstAttribute="leading" secondItem="RC-ID-1018" secondAttribute="leading" id="cancel-alignLeading-withContainer" userLabel="cancel-alignLeading-withContainer"/>
+                                            <constraint firstItem="cancel" firstAttribute="height" secondItem="RC-ID-1018" secondAttribute="height" id="cancel-heightEq-RC-ID-1018" userLabel="cancel-heightEq-RC-ID-1018"/>
+                                            <constraint firstItem="cancel" firstAttribute="top" secondItem="RC-ID-1018" secondAttribute="top" id="cancel-top-RC-ID-1018" userLabel="cancel-top-RC-ID-1018"/>
+                                            <constraint firstItem="equal" firstAttribute="width" secondItem="cancel" secondAttribute="width" multiplier="1.01266" id="equal-WidthRatio-RC-ID-1018" userLabel="equal-WidthRatio-RC-ID-1018"/>
+                                            <constraint firstItem="equal" firstAttribute="height" secondItem="RC-ID-1018" secondAttribute="height" id="equal-heightEq-RC-ID-1018" userLabel="equal-heightEq-RC-ID-1018"/>
+                                            <constraint firstItem="equal" firstAttribute="left" secondItem="zero" secondAttribute="right" id="equal-toRightOf-zero" userLabel="equal-toRightOf-zero"/>
+                                            <constraint firstItem="equal" firstAttribute="top" secondItem="RC-ID-1018" secondAttribute="top" id="equal-top-RC-ID-1018" userLabel="equal-top-RC-ID-1018"/>
+                                            <constraint firstItem="zero" firstAttribute="width" secondItem="cancel" secondAttribute="width" id="zero-WidthRatio-RC-ID-1018" userLabel="zero-WidthRatio-RC-ID-1018"/>
+                                            <constraint firstItem="zero" firstAttribute="height" secondItem="RC-ID-1018" secondAttribute="height" id="zero-heightEq-RC-ID-1018" userLabel="zero-heightEq-RC-ID-1018"/>
+                                            <constraint firstItem="zero" firstAttribute="left" secondItem="cancel" secondAttribute="right" id="zero-toRightOf-cancel" userLabel="zero-toRightOf-cancel"/>
+                                            <constraint firstItem="zero" firstAttribute="top" secondItem="RC-ID-1018" secondAttribute="top" id="zero-top-RC-ID-1018" userLabel="zero-top-RC-ID-1018"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="RC-ID-1003" firstAttribute="top" secondItem="equation" secondAttribute="bottom" constant="10" id="RC-ID-1003-below-equation" userLabel="RC-ID-1003-below-equation"/>
+                                    <constraint firstItem="RC-ID-1003" firstAttribute="centerX" secondItem="RC-ID-1000" secondAttribute="centerX" id="RC-ID-1003-centerX-RC-ID-1000" userLabel="RC-ID-1003-centerX-RC-ID-1000"/>
+                                    <constraint firstItem="RC-ID-1003" firstAttribute="leading" secondItem="RC-ID-1000" secondAttribute="leading" constant="8" id="RC-ID-1003-matchLeading-RC-ID-1000" userLabel="RC-ID-1003-matchLeading-RC-ID-1000"/>
+                                    <constraint firstItem="RC-ID-1003" firstAttribute="trailing" secondItem="RC-ID-1000" secondAttribute="trailing" constant="-8" id="RC-ID-1003-matchTrailing-RC-ID-1000" userLabel="RC-ID-1003-matchTrailing-RC-ID-1000"/>
+                                    <constraint firstItem="RC-ID-1008" firstAttribute="height" secondItem="RC-ID-1003" secondAttribute="height" id="RC-ID-1008-HeightEq-RC-ID-1000" userLabel="RC-ID-1008-HeightEq-RC-ID-1000"/>
+                                    <constraint firstItem="RC-ID-1008" firstAttribute="top" secondItem="RC-ID-1003" secondAttribute="bottom" id="RC-ID-1008-below-RC-ID-1003" userLabel="RC-ID-1008-below-RC-ID-1003"/>
+                                    <constraint firstItem="RC-ID-1008" firstAttribute="centerX" secondItem="RC-ID-1000" secondAttribute="centerX" id="RC-ID-1008-centerX-RC-ID-1000" userLabel="RC-ID-1008-centerX-RC-ID-1000"/>
+                                    <constraint firstItem="RC-ID-1008" firstAttribute="leading" secondItem="RC-ID-1000" secondAttribute="leading" constant="8" id="RC-ID-1008-matchLeading-RC-ID-1000" userLabel="RC-ID-1008-matchLeading-RC-ID-1000"/>
+                                    <constraint firstItem="RC-ID-1008" firstAttribute="trailing" secondItem="RC-ID-1000" secondAttribute="trailing" constant="-8" id="RC-ID-1008-matchTrailing-RC-ID-1000" userLabel="RC-ID-1008-matchTrailing-RC-ID-1000"/>
+                                    <constraint firstItem="RC-ID-1013" firstAttribute="height" secondItem="RC-ID-1003" secondAttribute="height" id="RC-ID-1013-HeightEq-RC-ID-1000" userLabel="RC-ID-1013-HeightEq-RC-ID-1000"/>
+                                    <constraint firstItem="RC-ID-1013" firstAttribute="top" secondItem="RC-ID-1008" secondAttribute="bottom" id="RC-ID-1013-below-RC-ID-1008" userLabel="RC-ID-1013-below-RC-ID-1008"/>
+                                    <constraint firstItem="RC-ID-1013" firstAttribute="centerX" secondItem="RC-ID-1000" secondAttribute="centerX" id="RC-ID-1013-centerX-RC-ID-1000" userLabel="RC-ID-1013-centerX-RC-ID-1000"/>
+                                    <constraint firstItem="RC-ID-1013" firstAttribute="leading" secondItem="RC-ID-1000" secondAttribute="leading" constant="8" id="RC-ID-1013-matchLeading-RC-ID-1000" userLabel="RC-ID-1013-matchLeading-RC-ID-1000"/>
+                                    <constraint firstItem="RC-ID-1013" firstAttribute="trailing" secondItem="RC-ID-1000" secondAttribute="trailing" constant="-8" id="RC-ID-1013-matchTrailing-RC-ID-1000" userLabel="RC-ID-1013-matchTrailing-RC-ID-1000"/>
+                                    <constraint firstItem="RC-ID-1018" firstAttribute="height" secondItem="RC-ID-1003" secondAttribute="height" id="RC-ID-1018-HeightEq-RC-ID-1000" userLabel="RC-ID-1018-HeightEq-RC-ID-1000"/>
+                                    <constraint firstItem="RC-ID-1018" firstAttribute="bottom" secondItem="RC-ID-1000" secondAttribute="bottom" constant="-8" id="RC-ID-1018-alignBottom-withContainer" userLabel="RC-ID-1018-alignBottom-withContainer"/>
+                                    <constraint firstItem="RC-ID-1018" firstAttribute="top" secondItem="RC-ID-1013" secondAttribute="bottom" id="RC-ID-1018-below-RC-ID-1013" userLabel="RC-ID-1018-below-RC-ID-1013"/>
+                                    <constraint firstItem="RC-ID-1018" firstAttribute="centerX" secondItem="RC-ID-1000" secondAttribute="centerX" id="RC-ID-1018-centerX-RC-ID-1000" userLabel="RC-ID-1018-centerX-RC-ID-1000"/>
+                                    <constraint firstItem="RC-ID-1018" firstAttribute="leading" secondItem="RC-ID-1000" secondAttribute="leading" constant="8" id="RC-ID-1018-matchLeading-RC-ID-1000" userLabel="RC-ID-1018-matchLeading-RC-ID-1000"/>
+                                    <constraint firstItem="RC-ID-1018" firstAttribute="trailing" secondItem="RC-ID-1000" secondAttribute="trailing" constant="-8" id="RC-ID-1018-matchTrailing-RC-ID-1000" userLabel="RC-ID-1018-matchTrailing-RC-ID-1000"/>
+                                    <constraint firstItem="display" firstAttribute="top" secondItem="RC-ID-1000" secondAttribute="top" constant="8" id="display-alignTop-withContainer" userLabel="display-alignTop-withContainer"/>
+                                    <constraint firstItem="display" firstAttribute="leading" secondItem="RC-ID-1000" secondAttribute="leading" constant="8" id="display-leading-RC-ID-1000" userLabel="display-leading-RC-ID-1000"/>
+                                    <constraint firstItem="display" firstAttribute="trailing" secondItem="RC-ID-1000" secondAttribute="trailing" constant="-8" id="display-matchTrailing-RC-ID-1000" userLabel="display-matchTrailing-RC-ID-1000"/>
+                                    <constraint firstItem="equation" firstAttribute="top" secondItem="display" secondAttribute="bottom" constant="10" id="equation-below-display" userLabel="equation-below-display"/>
+                                    <constraint firstItem="equation" firstAttribute="leading" secondItem="RC-ID-1000" secondAttribute="leading" constant="8" id="equation-leading-RC-ID-1000" userLabel="equation-leading-RC-ID-1000"/>
+                                    <constraint firstItem="equation" firstAttribute="trailing" secondItem="RC-ID-1000" secondAttribute="trailing" constant="-8" id="equation-matchTrailing-RC-ID-1000" userLabel="equation-matchTrailing-RC-ID-1000"/>
+                                </constraints>
+                            </view>
+                            <view clipsSubviews="YES" tag="101600222" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" restorationIdentifier="Footer-View" translatesAutoresizingMaskIntoConstraints="NO" id="Footer-View-ID" userLabel="Footer-View">
+                                <rect key="frame" x="0.0" y="736" width="414" height="0.0"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="Footer-View-Height"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="RC-ID-1000" firstAttribute="leading" secondItem="MainActivity-View-safeArea" secondAttribute="leading" id="RC-ID-1000-matchLeading-MainActivity-View-safeArea" userLabel="RC-ID-1000-matchLeading-MainActivity-View-safeArea"/>
+                            <constraint firstItem="RC-ID-1000" firstAttribute="top" secondItem="MainActivity-View-safeArea" secondAttribute="top" id="RC-ID-1000-matchTop-MainActivity-View-safeArea" userLabel="RC-ID-1000-matchTop-MainActivity-View-safeArea"/>
+                            <constraint firstItem="RC-ID-1000" firstAttribute="trailing" secondItem="MainActivity-View-safeArea" secondAttribute="trailing" id="RC-ID-1000-matchTrailing-MainActivity-View-safeArea" userLabel="RC-ID-1000-matchTrailing-MainActivity-View-safeArea"/>
+                            <constraint firstItem="Footer-View-ID" firstAttribute="bottom" secondItem="MainActivity-View-safeArea" secondAttribute="bottom" id="footer-match-botton"/>
+                            <constraint firstItem="Footer-View-ID" firstAttribute="leading" secondItem="MainActivity-View-safeArea" secondAttribute="leading" id="footer-match-leading"/>
+                            <constraint firstItem="Footer-View-ID" firstAttribute="top" secondItem="RC-ID-1000" secondAttribute="bottom" id="footer-match-top-RC-ID-1000" userLabel="footer-match-top-RC-ID-1000"/>
+                            <constraint firstItem="Footer-View-ID" firstAttribute="trailing" secondItem="MainActivity-View-safeArea" secondAttribute="trailing" id="footer-match-trailing"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MainActivity-View-safeArea"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Calculator" id="MainActivity-VC-Nav-ID"/>
+                    <connections>
+                        <outlet property="outlet_RC_ID_1000" destination="RC-ID-1000" id="RC-ID-1000-Outlet"/>
+                        <outlet property="outlet_RC_ID_1003" destination="RC-ID-1003" id="RC-ID-1003-Outlet"/>
+                        <outlet property="outlet_RC_ID_1008" destination="RC-ID-1008" id="RC-ID-1008-Outlet"/>
+                        <outlet property="outlet_RC_ID_1013" destination="RC-ID-1013" id="RC-ID-1013-Outlet"/>
+                        <outlet property="outlet_RC_ID_1018" destination="RC-ID-1018" id="RC-ID-1018-Outlet"/>
+                        <outlet property="outlet_add" destination="add" id="add-Outlet"/>
+                        <outlet property="outlet_cancel" destination="cancel" id="cancel-Outlet"/>
+                        <outlet property="outlet_display" destination="display" id="display-Outlet1"/>
+                        <outlet property="outlet_div" destination="div" id="div-Outlet"/>
+                        <outlet property="outlet_eight" destination="eight" id="eight-Outlet"/>
+                        <outlet property="outlet_equal" destination="equal" id="equal-Outlet"/>
+                        <outlet property="outlet_equation" destination="equation" id="equation-Outlet1"/>
+                        <outlet property="outlet_five" destination="five" id="five-Outlet"/>
+                        <outlet property="outlet_four" destination="four" id="four-Outlet"/>
+                        <outlet property="outlet_mul" destination="mul" id="mul-Outlet"/>
+                        <outlet property="outlet_nine" destination="nine" id="nine-Outlet"/>
+                        <outlet property="outlet_one" destination="one" id="one-Outlet"/>
+                        <outlet property="outlet_seven" destination="seven" id="seven-Outlet"/>
+                        <outlet property="outlet_six" destination="six" id="six-Outlet"/>
+                        <outlet property="outlet_sub" destination="sub" id="sub-Outlet"/>
+                        <outlet property="outlet_three" destination="three" id="three-Outlet"/>
+                        <outlet property="outlet_two" destination="two" id="two-Outlet"/>
+                        <outlet property="outlet_zero" destination="zero" id="zero-Outlet"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="400" y="600"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="RC_btn_default_normal" width="12" height="24"/>
+        <namedColor name="colorPrimary">
+            <color red="0.0" green="0.52156862745098043" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

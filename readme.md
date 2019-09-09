@@ -40,11 +40,13 @@ This sample project demonstrates porting of following files -
 | Class | Members |
 |-------|---------|
 | AppCompatActivity | onCreate(), OnClickListenerm(), findViewById() |
-| View |setOnClickListener |
-| Button |
-| TextView | getText(), |
+| Button | setOnClickListener(), getText() |
+| TextView | getText(), setText() |
 | String | toString(), equals() | 
+| Integer | toString() |
 | Log | Log.e() |
+| String | toString(), equals() | 
+| Integer | toString() |
 | Java language | if, elseif, swiftch case |
 
 ### Details of layout controls ported -

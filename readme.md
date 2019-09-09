@@ -33,10 +33,10 @@ This sample project demonstrates porting of following files -
 
 
 ## Dev Notes
-* `RC_btn_default_???.imageset` are used as a default background when no image is provided in Android project
+* `RC_btn_default.imageset` are used as a default background when no image is provided in Android project
 * .xml layout controls used - Linear layout, Buttons and TextView
 
-Details of classes ported -
+### Details of classes ported -
 | Class | Members |
 |-------|---------|
 | AppCompatActivity | onCreate(), OnClickListenerm(), findViewById() |
@@ -47,7 +47,7 @@ Details of classes ported -
 | Log | Log.e() |
 | Java language | if, elseif, swiftch case |
 
-Details of layout controls ported -
+### Details of layout controls ported -
 | Control | Attributes |
 |---------|------------|
 | LinearLayout | layout_width, layout_height, layout_weight, gravity, orientation, padding|
@@ -76,7 +76,8 @@ Screen shot of Android and iOS devices -
 
 -----
 
-Screen recording
+## Screen recording
+
 <img src="/Visuals/Calc-Screen-Rec.gif" alt="Anim-ScreenRec-Android"/>
 
 -----

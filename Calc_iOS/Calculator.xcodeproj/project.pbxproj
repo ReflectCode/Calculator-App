@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17A4A368234CDA0100CE2261 /* mainView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17A4A367234CDA0100CE2261 /* mainView.storyboard */; };
+		17A4A36A234CDA0E00CE2261 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A4A369234CDA0E00CE2261 /* MainViewController.swift */; };
 		17CD7DA122F9BD680010281F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CD7DA022F9BD680010281F /* AppDelegate.swift */; };
 		17CD7DA822F9BD6B0010281F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17CD7DA722F9BD6B0010281F /* Assets.xcassets */; };
 		17CD7DAB22F9BD6B0010281F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17CD7DA922F9BD6B0010281F /* LaunchScreen.storyboard */; };
-		17CD7DB322F9BDC70010281F /* activity_main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17CD7DB222F9BDC70010281F /* activity_main.storyboard */; };
-		17CD7DB522F9BDCF0010281F /* MainActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CD7DB422F9BDCF0010281F /* MainActivity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17A4A367234CDA0100CE2261 /* mainView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = mainView.storyboard; sourceTree = "<group>"; };
+		17A4A369234CDA0E00CE2261 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		17CD7D9D22F9BD680010281F /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17CD7DA022F9BD680010281F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17CD7DA722F9BD6B0010281F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17CD7DAA22F9BD6B0010281F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17CD7DAC22F9BD6B0010281F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		17CD7DB222F9BDC70010281F /* activity_main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = activity_main.storyboard; sourceTree = "<group>"; };
-		17CD7DB422F9BDCF0010281F /* MainActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainActivity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,10 +54,10 @@
 		17CD7D9F22F9BD680010281F /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				17CD7DA022F9BD680010281F /* AppDelegate.swift */,
-				17CD7DB222F9BDC70010281F /* activity_main.storyboard */,
-				17CD7DB422F9BDCF0010281F /* MainActivity.swift */,
+				17A4A367234CDA0100CE2261 /* mainView.storyboard */,
+				17A4A369234CDA0E00CE2261 /* MainViewController.swift */,
 				17CD7DA722F9BD6B0010281F /* Assets.xcassets */,
+				17CD7DA022F9BD680010281F /* AppDelegate.swift */,
 				17CD7DA922F9BD6B0010281F /* LaunchScreen.storyboard */,
 				17CD7DAC22F9BD6B0010281F /* Info.plist */,
 			);
@@ -124,7 +124,7 @@
 			files = (
 				17CD7DAB22F9BD6B0010281F /* LaunchScreen.storyboard in Resources */,
 				17CD7DA822F9BD6B0010281F /* Assets.xcassets in Resources */,
-				17CD7DB322F9BDC70010281F /* activity_main.storyboard in Resources */,
+				17A4A368234CDA0100CE2261 /* mainView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +136,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17CD7DA122F9BD680010281F /* AppDelegate.swift in Sources */,
-				17CD7DB522F9BDCF0010281F /* MainActivity.swift in Sources */,
+				17A4A36A234CDA0E00CE2261 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

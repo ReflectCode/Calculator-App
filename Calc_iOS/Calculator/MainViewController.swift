@@ -1,10 +1,30 @@
 
 import UIKit
 
+// The MIT License (MIT)
+//
+// Copyright (c) 2019 Reflect Code Technologies (OPC) Pvt. Ltd. (http://ReflectCode.com)
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy of this software
+// and associated documentation files (the "Software"), to deal in the Software without restriction,
+// including without limitation the rights to use, copy, modify, merge, publish, distribute,
+// sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in all copies or
+// substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
+// BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+// NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-public class MainActivity : UIViewController {
+public class MainViewController : UIViewController {
 
-    
+    /*************************************************************************/
+    // MARK: - IBOutlets
+    /*************************************************************************/
         @IBOutlet weak var outlet_one: UIButton!
         @IBOutlet weak var outlet_two: UIButton!
         @IBOutlet weak var outlet_three: UIButton!
@@ -30,48 +50,53 @@ public class MainActivity : UIViewController {
         @IBOutlet weak var outlet_RC_ID_1018: UIView!
 
 
+    /*************************************************************************/
+    // MARK: - IBAction methods
+    /*************************************************************************/
+
+
     @IBAction func onClick(_ btnPressed: UIView?){
         switch (btnPressed){
 
         case outlet_zero:
             updateDisp(zero!.title( for: UIControl.State.normal )!)
-            break
+
 
         case outlet_one:
             updateDisp(one!.title( for: UIControl.State.normal )!)
-            break
+
 
         case outlet_two:
             updateDisp(two!.title( for: UIControl.State.normal )!)
-            break
+
 
         case outlet_three:
             updateDisp(three!.title( for: UIControl.State.normal )!)
-            break
+
 
         case outlet_four:
             updateDisp(four!.title( for: UIControl.State.normal )!)
-            break
+
 
         case outlet_five:
             updateDisp(five!.title( for: UIControl.State.normal )!)
-            break
+
 
         case outlet_six:
             updateDisp(six!.title( for: UIControl.State.normal )!)
-            break
+
 
         case outlet_seven:
             updateDisp(seven!.title( for: UIControl.State.normal )!)
-            break
+
 
         case outlet_eight:
             updateDisp(eight!.title( for: UIControl.State.normal )!)
-            break
+
 
         case outlet_nine:
             updateDisp(nine!.title( for: UIControl.State.normal )!)
-            break
+
 
         case outlet_cancel:
             op1 = 0
@@ -79,9 +104,9 @@ public class MainActivity : UIViewController {
             continueCalculationl = false
             clearDisplay = true
             disp!.text = "0"
-            // RC Note (Java Code) : disp.setHint ( "Perform Operation :)" ) ;    // ToDo - UILabel do not support placeholder property
+            // RC Note (Java Code) : disp.setHint ( "Perform Operation :)" ) ;    // RC ToDo - UILabel do not support placeholder property
             equation!.text = ""
-            break
+
 
         case outlet_add:
             if op1 == 0 {
@@ -101,7 +126,7 @@ public class MainActivity : UIViewController {
                     clearDisplay = true
                 }
             }
-            break
+
 
         case outlet_sub:
             if op1 == 0 {
@@ -121,7 +146,6 @@ public class MainActivity : UIViewController {
                     clearDisplay = true
                 }
             }
-            break
 
 
         case outlet_mul:
@@ -142,7 +166,7 @@ public class MainActivity : UIViewController {
                     clearDisplay = true
                 }
             }
-            break
+
 
         case outlet_div:
             if op1 == 0 {
@@ -162,7 +186,7 @@ public class MainActivity : UIViewController {
                     clearDisplay = true
                 }
             }
-            break
+
 
         case outlet_equal:
             if op1 != 0 {
@@ -171,16 +195,17 @@ public class MainActivity : UIViewController {
                 operation()
                 optr = ""
             }
-            break
+
 
         default :
             print("Error : Error - Default case not provided")
         }
     }
 
-    
+    /*************************************************************************/
     // MARK: - Main code start
-    
+    /*************************************************************************/
+
     var one : UIButton? = UIButton()
     var two : UIButton? = UIButton()
     var three : UIButton? = UIButton()
@@ -205,7 +230,7 @@ public class MainActivity : UIViewController {
     var clearDisplay : Bool? = false
     var optr : String? = ""
 
-    //  Note - source android method is onCreate()
+
     override public func viewDidLoad(){
         super.viewDidLoad()
 
@@ -233,7 +258,6 @@ public class MainActivity : UIViewController {
         equal = outlet_equal
         disp = outlet_display
         equation = outlet_equation
-
     }
 
 
@@ -262,6 +286,7 @@ public class MainActivity : UIViewController {
             continueCalculationl = true
         }
     }
+
 
     open func updateDisp(_ str: String?) -> Void {
         //Editable strToUpdate = (Editable)disp.getText();

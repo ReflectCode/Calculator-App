@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		177B258F235112810084119F /* mainView-V2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177B258E235112810084119F /* mainView-V2.storyboard */; };
 		17A4A368234CDA0100CE2261 /* mainView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17A4A367234CDA0100CE2261 /* mainView.storyboard */; };
 		17A4A36A234CDA0E00CE2261 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A4A369234CDA0E00CE2261 /* MainViewController.swift */; };
 		17CD7DA122F9BD680010281F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CD7DA022F9BD680010281F /* AppDelegate.swift */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		177B258E235112810084119F /* mainView-V2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "mainView-V2.storyboard"; sourceTree = "<group>"; };
 		17A4A367234CDA0100CE2261 /* mainView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = mainView.storyboard; sourceTree = "<group>"; };
 		17A4A369234CDA0E00CE2261 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		17CD7D9D22F9BD680010281F /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				17A4A367234CDA0100CE2261 /* mainView.storyboard */,
+				177B258E235112810084119F /* mainView-V2.storyboard */,
 				17A4A369234CDA0E00CE2261 /* MainViewController.swift */,
 				17CD7DA722F9BD6B0010281F /* Assets.xcassets */,
 				17CD7DA022F9BD680010281F /* AppDelegate.swift */,
@@ -124,6 +127,7 @@
 			files = (
 				17CD7DAB22F9BD6B0010281F /* LaunchScreen.storyboard in Resources */,
 				17CD7DA822F9BD6B0010281F /* Assets.xcassets in Resources */,
+				177B258F235112810084119F /* mainView-V2.storyboard in Resources */,
 				17A4A368234CDA0100CE2261 /* mainView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
